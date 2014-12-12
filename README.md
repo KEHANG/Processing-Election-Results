@@ -1,8 +1,11 @@
-election-example
-================
+Election-Results-Visualization Homework7
+========================================
 
-A silly example on Processing that reads in 2012 US election results and draws them as text.
-Open the Election.pde to run the example.  Modify the code to do something more interesting.
+An example on Processing that reads in 2012 US election results and draws them as text.
+
+Functionality
+-------------
+The color of state will change into the color of the winning candidate. e.g. Obama (always blue) won Vermont, so Vermont is blue; while Romney (always red) won Arizona, so Arizona turns red.
 
 Instructions
 ------------
@@ -13,8 +16,6 @@ Instructions
   * If you want to use your own git repository, you can download this using the "zip" button
 3. Open the Election.pde file on your computer with Processing
 4. Press the play button to run it
-5. Modify the `draw()` function to do something more interesting!
-6. Commit the changes to your git repository
 
 Data
 ----
