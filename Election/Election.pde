@@ -41,13 +41,20 @@ void draw() {
     // reset everything
     smooth();
     background(0);
-    fill(255);
     // draw the state name
     textFont(font,36);
     textAlign(CENTER);
     String currentPostalCode = statePostalCodes[ currentStateIndex ];
     StateData state = data.getState(currentPostalCode);
-    text(state.name,WINDOW_SIZE/2,WINDOW_SIZE/4);
+    if (state.pctForObama > state.pctForRomney) {
+      fill(50,50,250);  // blue
+      text(state.name,3*WINDOW_SIZE/8,WINDOW_SIZE/4);
+    }
+    else if (state.pctForObama < state.pctForRomney) {
+      fill(201,50,50);  // red
+      text(state.name,5*WINDOW_SIZE/8,WINDOW_SIZE/4);
+    }
+    
     // draw the obama vote count and title
     fill(50,50,250);  // blue
     text("Obama",WINDOW_SIZE/4,WINDOW_SIZE/2);
